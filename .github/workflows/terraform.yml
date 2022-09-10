@@ -43,6 +43,8 @@ jobs:
         if: github.event_name == 'pull_request'
         run: terraform plan -no-color -input=false  -var-file="env_vars/dev.tfvars"
         continue-on-error: true
+        # env:
+        #  TF_CLI_ARGS: '-var-file="env/dev.tfvars"'
 
       - uses: actions/github-script@v6
         if: github.event_name == 'pull_request'
