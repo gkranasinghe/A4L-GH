@@ -1,5 +1,5 @@
 provider "aws" {
-  region                   = var.aws_region
+  region = var.aws_region
   # profile                  = "A4L"
   # shared_credentials_files = ["/home/gk/.aws/credentials_A4L"]
 
