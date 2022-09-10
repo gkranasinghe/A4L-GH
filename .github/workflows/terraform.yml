@@ -79,4 +79,4 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform apply -auto-approve  -input=false -var-file="./env_vars/${TF_WORKSPACE}.tfvars"
+        run: terraform apply -auto-approve  -input=false -var-file="./env_vars/dev.tfvars"
